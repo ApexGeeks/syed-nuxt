@@ -1,10 +1,12 @@
 import type { NuxtPage } from 'nuxt/schema';
+import tailwindcss from '@tailwindcss/vite';
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
 	compatibilityDate: '2024-11-01',
 	devtools: { enabled: true },
-	modules: ['@nuxtjs/tailwindcss', '@nuxt/eslint'],
+	css: ['~/assets/css/main.css'],
+	modules: ['@nuxt/eslint'],
 	hooks: {
 		'pages:extend': function (pages) {
 			function removePagesMatching(pattern: RegExp, pages: NuxtPage[] = []) {
@@ -25,5 +27,8 @@ export default defineNuxtConfig({
 
 			removePagesMatching(/\/_.*?/, pages);
 		}
+	},
+	vite: {
+		plugins: [tailwindcss()]
 	}
 });
