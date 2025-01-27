@@ -6,10 +6,14 @@ import image3 from '@/assets/images/headphone.webp';
 
 <template>
 	<div
-		class="mx-auto mt-10 max-w-[80%] rounded-4xl border border-gray-100 bg-white pb-10"
+		class="mx-auto mt-10 max-w-[90%] rounded-4xl border border-gray-100 bg-white pb-10 md:max-w-[80%]"
 	>
-		<div class="flex items-center justify-between px-10 py-8">
-			<h1 class="text-4xl font-semibold">Our Services</h1>
+		<div
+			class="flex flex-col items-start justify-between px-10 py-8 md:flex-row md:items-center"
+		>
+			<h1 class="mb-4 text-3xl font-semibold md:mb-0 md:text-4xl">
+				Our Services
+			</h1>
 			<p
 				class="rounded-full bg-[#10d07f1a] px-4 py-1.5 font-semibold text-[#0a955a]"
 			>
