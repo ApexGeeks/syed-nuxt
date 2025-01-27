@@ -6,7 +6,12 @@ export default defineNuxtConfig({
 	compatibilityDate: '2024-11-01',
 	devtools: { enabled: true },
 	css: ['~/assets/css/main.css'],
-	modules: ['@nuxt/eslint'],
+	modules: ['@nuxt/eslint', '@nuxt/fonts'],
+	fonts: {
+		provider: 'google',
+		families: [{ name: 'Poppins', provider: 'google', preload: true }],
+		experimental: { processCSSVariables: true }
+	},
 	hooks: {
 		'pages:extend': function (pages) {
 			function removePagesMatching(pattern: RegExp, pages: NuxtPage[] = []) {
