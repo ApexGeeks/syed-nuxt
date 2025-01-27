@@ -94,7 +94,6 @@
 
 				<div>
 					<h1 class="text-xl font-semibold">Other Development Agencies</h1>
-					<hr class="mt-[29px] h-[1px] text-gray-200" />
 					<div class="mt-5 flex items-center gap-3">
 						<span class="w-7 rounded-[6px] border border-gray-100 text-center"
 							><Icon
@@ -168,7 +167,6 @@
 							No Access To Platforms, No Support
 						</p>
 					</div>
-					<hr class="mt-6 h-[1px] text-gray-200" />
 				</div>
 			</div>
 		</div>
