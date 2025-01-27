@@ -6,6 +6,14 @@ export default withNuxt({
 	plugins: { eslintPluginPrettier },
 	rules: {
 		'eslintPluginPrettier/prettier': ['warn', { endOfLine: 'auto' }],
-		'vue/multi-word-component-names': 'off'
+		'vue/multi-word-component-names': 'off',
+		'vue/html-self-closing': [
+			'warn',
+			{
+				html: {
+					void: 'always'
+				}
+			}
+		]
 	}
 });
