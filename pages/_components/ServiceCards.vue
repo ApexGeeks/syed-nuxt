@@ -1,12 +1,10 @@
-<script setup>
-import image1 from '@/assets/images/phone-girl.jpg';
-import image2 from '@/assets/images/laptop-boy.jpg';
-import image3 from '@/assets/images/headphone.webp';
+<script setup lang="ts">
+import ServicesImage from './ServicesImage.vue';
 </script>
 
 <template>
 	<div
-		class="mx-auto mt-10 max-w-[90%] rounded-4xl border border-gray-100 bg-white pb-10 md:max-w-[80%]"
+		class="container mt-10 rounded-4xl border border-gray-100 bg-white pb-10"
 	>
 		<div
 			class="flex flex-col items-start justify-between px-10 py-8 md:flex-row md:items-center"
@@ -20,70 +18,37 @@ import image3 from '@/assets/images/headphone.webp';
 				3 services
 			</p>
 		</div>
-		<div class="flex flex-col items-center">
-			<div
-				class="grid grid-cols-1 grid-rows-[400px] gap-4 px-10 md:grid-cols-2"
+		<div class="grid gap-5 *:min-h-90">
+			<ServicesImage
+				image="/images/phone-girl.jpg"
+				class="col-start-1 -col-end-1"
 			>
-				<div class="relative h-auto overflow-hidden rounded-2xl">
-					<img
-						:src="image1"
-						alt=""
-						class="absolute z-[5] rounded-2xl transition-all hover:scale-105"
-					/>
-					<div class="relative z-[10] flex items-end justify-start p-5">
-						<h1 class="mb-3 text-2xl font-semibold text-white">
-							AI Voice Agents
-						</h1>
-						<p class="mb-3 text-xl font-semibold text-[#fbfbfb99] opacity-60">
-							Next level AI Voice Agents For Automated Inbound & Outbound Phone
-							Calls.
-						</p>
-						<button class="text-xl font-semibold text-white">
-							Get Started
-						</button>
-					</div>
-				</div>
-				<div class="relative overflow-hidden">
-					<img
-						:src="image2"
-						alt=""
-						class="absolute z-[5] rounded-2xl transition-all hover:scale-105"
-					/>
-					<div class="relative z-[10] flex items-end justify-start p-5">
-						<h1 class="mb-3 text-2xl font-semibold text-white">
-							AI Voice Agents
-						</h1>
-						<p
-							class="mb-3 w-[60%] text-xl font-semibold text-[#fbfbfb99] opacity-60"
-						>
-							Next level AI Voice Agents For Automated Inbound & Outbound Phone
-							Calls.
-						</p>
-						<button class="text-xl font-semibold text-white">
-							Get Started
-						</button>
-					</div>
-				</div>
-			</div>
-			<div class="relative mb-5 px-10">
-				<img
-					:src="image3"
-					alt=""
-					class="rounded-2xl transition-all"
-				/>
-				<div class="absolute bottom-10 left-8">
-					<h1 class="mb-3 text-2xl font-semibold text-white">
-						AI Voice Agents
-					</h1>
-					<p
-						class="mb-3 w-[60%] text-xl font-semibold text-[#fbfbfb99] opacity-60"
-					>
-						Next level AI Voice Agents For Automated Inbound & Outbound Phone
-						Calls.
-					</p>
-					<button class="text-xl font-semibold text-white">Get Started</button>
-				</div>
-			</div>
+				<template #heading>AI Voice Agents</template>
+				<template #paragraph>
+					Next Level AI Voice Agents For Automated Inbound and Outbound Phone
+					Calls
+				</template>
+			</ServicesImage>
+			<ServicesImage
+				image="/images/phone-girl.jpg"
+				class="col-start-2 col-end-3"
+			>
+				<template #heading>AI Voice Agents</template>
+				<template #paragraph>
+					Next Level AI Voice Agents For Automated Inbound and Outbound Phone
+					Calls
+				</template>
+			</ServicesImage>
+			<ServicesImage
+				image="/images/phone-girl.jpg"
+				class="col-start-1 col-end-3"
+			>
+				<template #heading>AI Voice Agents</template>
+				<template #paragraph>
+					Next Level AI Voice Agents For Automated Inbound and Outbound Phone
+					Calls
+				</template>
+			</ServicesImage>
 		</div>
 		<div
 			class="mx-10 mt-5 mb-10 rounded-[32px] border border-gray-100 bg-[#fbfbfb] p-3"
