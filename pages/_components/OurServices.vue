@@ -1,7 +1,7 @@
 <script setup></script>
 <template>
 	<div class="bg-[#f4f4f4]">
-		<div class="mx-auto mb-20 max-w-[80%]">
+		<div class="container mb-20">
 			<h1 class="mb-14 pt-20 text-[34px] font-semibold">
 				Our
 				<span
@@ -25,12 +25,12 @@
 						<h1 class="mb-6 text-2xl font-semibold md:w-[70%]">
 							Next-Level Customer Engagement.
 						</h1>
-						<div class="mb-4 flex items-end gap-1">
+						<div class="my-4 mt-10 flex items-end gap-1">
 							<h2 class="text-2xl font-semibold">Starting From US$3,000</h2>
 							<p class="leading font-semibold">setup fee</p>
 						</div>
 						<button
-							class="rounded-full bg-black px-6 py-3 font-semibold text-white transition-all duration-200 hover:pr-7 hover:pl-9"
+							class="rounded-full bg-black px-6 py-3 font-semibold text-white transition-all duration-200 hover:px-9"
 						>
 							Get Started
 						</button>
@@ -80,14 +80,14 @@
 							<span class="text-[#a1a1a1]">Fully automate </span>your phone
 							calls.
 						</h1>
-						<div class="mb-4 flex items-end gap-1">
+						<div class="my-4 mt-10 flex items-end gap-1">
 							<h2 class="text-2xl font-semibold text-white">
 								Starting From US$4,000
 							</h2>
 							<p class="leading font-semibold text-[#8b8b8b]">setup fee</p>
 						</div>
 						<button
-							class="rounded-full border border-[#fbfbfb] bg-[#fbfbfb] px-6 py-3 font-semibold transition-all duration-200 hover:pr-7 hover:pl-9"
+							class="rounded-full border border-[#fbfbfb] bg-[#fbfbfb] px-6 py-3 font-semibold transition-all duration-200 hover:px-9"
 						>
 							Get Started
 						</button>
@@ -124,6 +124,14 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div
+			class="container mt-10 flex items-center justify-between rounded-3xl bg-white px-5 py-10"
+		>
+			<h1 class="text-2xl font-semibold">
+				Book Our AI Agent Discovery Call Today.
+			</h1>
+			<Button>Book A Call</Button>
 		</div>
 	</div>
 </template>

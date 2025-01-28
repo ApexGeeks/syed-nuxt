@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-	<div class="mx-auto mt-40 mb-20 max-w-[90%] md:max-w-[80%]">
+	<div class="container mx-auto mt-40 mb-20">
 		<div
 			class="mb-20 flex flex-col items-start justify-between gap-14 md:flex-row md:items-center md:gap-0"
 		>
