@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 	compatibilityDate: '2024-11-01',
 	devtools: { enabled: true },
 	css: ['~/assets/css/main.css'],
-	modules: ['@nuxt/eslint', '@nuxt/fonts'],
+	modules: ['@nuxt/eslint', '@nuxt/fonts', '@nuxt/icon'],
 	fonts: {
 		provider: 'google',
 		families: [{ name: 'Poppins', provider: 'google', preload: true }],
