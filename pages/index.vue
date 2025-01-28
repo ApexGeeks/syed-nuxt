@@ -11,6 +11,7 @@ import Contact from './_components/Contact.vue';
 
 <template>
 	<!-- eslint-disable vue/no-multiple-template-root -->
+	<Navbar />
 	<Hero />
 	<Adjectives />
 	<ServiceCards />
