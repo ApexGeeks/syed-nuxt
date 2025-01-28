@@ -16,40 +16,43 @@ import Question from './Question.vue';
 						</template>
 					</Question>
 					<Question>
-						<template #heading>What types of AI Agents do you offer?</template>
+						<template #heading
+							>How do you ensure the quality of your projects?</template
+						>
 						<template #text>
-							We provide two types of AI Agents. AI Voice Agents & AI Text
-							Chatbots.
+							We have a minimum 2 week testing period for our AI Agents. Our
+							packages range from 2 weeks of testing to 6 weeks of testing.
+							<br />
+							<br />
+							If you opt for our maintenance package, you will receive immediate
+							upgrades & bug fixes.
 						</template>
 					</Question>
 					<Question>
-						<template #heading>What types of AI Agents do you offer?</template>
+						<template #heading>What is your development process like?</template>
 						<template #text>
-							We provide two types of AI Agents. AI Voice Agents & AI Text
-							Chatbots.
+							Our process involves initial consultation, planning, design,
+							development, testing, and deployment. We follow agile
+							methodologies to ensure flexibility and responsiveness.
 						</template>
 					</Question>
 				</div>
 				<div class="flex flex-col gap-5 *:w-full">
 					<Question>
-						<template #heading>What types of AI Agents do you offer?</template>
+						<template #heading>How do you handle project timelines?</template>
 						<template #text>
-							We provide two types of AI Agents. AI Voice Agents & AI Text
-							Chatbots.
+							We create detailed project timelines with clear milestones. Our
+							project deadlines are met by coordinating all phases of the
+							development process.
 						</template>
 					</Question>
 					<Question>
-						<template #heading>What types of AI Agents do you offer?</template>
+						<template #heading
+							>How often will I receive updates on the project?</template
+						>
 						<template #text>
-							We provide two types of AI Agents. AI Voice Agents & AI Text
-							Chatbots.
-						</template>
-					</Question>
-					<Question>
-						<template #heading>What types of AI Agents do you offer?</template>
-						<template #text>
-							We provide two types of AI Agents. AI Voice Agents & AI Text
-							Chatbots.
+							We will have at least 1 call per week to discuss the status of the
+							project during its development & testing phase.
 						</template>
 					</Question>
 				</div>
