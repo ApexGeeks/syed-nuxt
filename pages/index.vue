@@ -5,6 +5,8 @@ import Benifits from './_components/Benifits.vue';
 import CommonQuestions from './_components/CommonQuestions.vue';
 import OurServices from './_components/OurServices.vue';
 import ServiceCards from './_components/ServiceCards.vue';
+import Connect from './_components/Connect.vue';
+import Contact from './_components/Contact.vue';
 </script>
 
 <template>
@@ -15,4 +17,7 @@ import ServiceCards from './_components/ServiceCards.vue';
 	<Benifits />
 	<OurServices />
 	<CommonQuestions />
+	<Connect />
+	<Contact />
+	<Footer />
 </template>

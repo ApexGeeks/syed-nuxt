@@ -2,7 +2,7 @@
 <template>
 	<div class="bg-[#f4f4f4]">
 		<div class="container mb-20">
-			<h1 class="mb-14 pt-20 text-[34px] font-semibold">
+			<h1 class="mb-14 pt-20 text-[34px] font-semibold max-md:text-center">
 				Our
 				<span
 					class="border-l-[4px] border-[#10d07f] bg-gradient-to-r from-[#10d07f52] to-[#10d07f0a] pr-[8px] pl-[8px]"
@@ -10,7 +10,7 @@
 				>
 			</h1>
 			<div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
-				<div class="rounded-[32px] border border-[#eee] bg-[#fbfbfb] p-3">
+				<div class="rounded-[32px] border border-[#eee] bg-[#fbfbfb] p-3 pb-10">
 					<div class="rounded-[20px] border border-[#f4f4f4] bg-[#ffffff] p-4">
 						<div
 							class="mb-4 flex items-center justify-between gap-3 md:justify-normal"
@@ -126,7 +126,7 @@
 			</div>
 		</div>
 		<div
-			class="container mt-10 flex items-center justify-between rounded-3xl bg-white px-5 py-10"
+			class="container mt-10 flex flex-col items-center justify-between gap-5 rounded-3xl bg-white px-5 py-10 md:flex-row"
 		>
 			<h1 class="text-2xl font-semibold">
 				Book Our AI Agent Discovery Call Today.

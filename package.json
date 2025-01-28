@@ -21,6 +21,7 @@
     "chalk": "^5.4.1",
     "eslint": "^8.57.0 || ^9.0.0",
     "nuxt": "^3.15.0",
+    "nuxt-calendly": "0.1.21",
     "vue": "latest",
     "vue-router": "latest",
     "vue3-marquee": "^4.2.2"

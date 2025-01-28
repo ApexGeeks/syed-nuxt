@@ -15,10 +15,12 @@ defineProps<{ image: string }>();
 			<div class="radial-gradient absolute top-0 z-[6] h-full w-full" />
 		</div>
 		<div
-			class="relative z-10 flex h-full w-full max-w-[25ch] flex-col items-start justify-end p-5"
+			class="relative z-10 flex h-full w-full flex-col items-start justify-end p-5 px-7"
 		>
-			<h1 class="text-2xl font-semibold text-white"><slot name="heading" /></h1>
-			<p class="my-3 max-w-44 text-lg font-semibold text-[#d4d4d4]">
+			<h1 class="max-w-[25ch] text-2xl font-semibold text-white">
+				<slot name="heading" />
+			</h1>
+			<p class="my-3 max-w-54 text-lg font-semibold text-[#d4d4d4]">
 				<slot name="paragraph" />
 			</p>
 			<button
