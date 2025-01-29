@@ -1,5 +1,27 @@
+<script setup lang="ts">
+const footerRef = ref();
+const emits = defineEmits<{ (id: 'isInView', value: boolean): void }>();
+
+const isFooterVisible = useElementVisibility(footerRef, {
+	rootMargin: '-100px'
+});
+
+watch(
+	isFooterVisible,
+	(isVisisble) => {
+		emits('isInView', isVisisble);
+	},
+	{
+		immediate: true
+	}
+);
+</script>
+
 <template>
-	<footer class="bg-Black py-10">
+	<footer
+		ref="footerRef"
+		class="bg-Black py-10"
+	>
 		<div
 			class="container flex flex-col justify-between gap-16 max-md:items-center md:flex-row"
 		>
