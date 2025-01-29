@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const runtimeConfig = useRuntimeConfig();
+</script>
 
 <template>
 	<section class="bg-[#f4f4f4] py-20">
@@ -18,7 +20,7 @@
 				</p>
 			</div>
 			<div class="mt-10 rounded-3xl bg-white p-10 sm:mx-5">
-				<CalendlyInlineWidget url="https://calendly.com/shmugeesahmad/30min" />
+				<CalendlyInlineWidget :url="runtimeConfig.public.calendly" />
 			</div>
 		</div>
 	</section>

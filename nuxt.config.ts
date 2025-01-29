@@ -33,6 +33,11 @@ export default defineNuxtConfig({
 			removePagesMatching(/\/_.*?/, pages);
 		}
 	},
+	runtimeConfig: {
+		public: {
+			calendly: 'https://calendly.com/zainul2002ca'
+		}
+	},
 	vite: {
 		plugins: [tailwindcss()]
 	}
