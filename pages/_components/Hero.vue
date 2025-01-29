@@ -1,4 +1,6 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const runtimeConfig = useRuntimeConfig();
+</script>
 
 <template>
 	<div
@@ -24,17 +26,26 @@
 			that do real work.
 		</h1>
 		<div class="mt-5 gap-3 *:my-3 max-sm:*:mx-auto max-sm:*:w-full sm:flex">
-			<Button>Book A Call</Button>
-			<Button
-				is-light
-				class="max-sm:text-start"
-				>Our Services</Button
+			<a
+				:href="runtimeConfig.public.calendly"
+				target="_blank"
 			>
-			<Button
-				is-light
-				class="max-sm:text-start"
-				>What are AI Agents?</Button
-			>
+				<Button>Book A Call</Button>
+			</a>
+			<a href="#services">
+				<Button
+					is-light
+					class="max-sm:text-start"
+					>Our Services</Button
+				>
+			</a>
+			<a href="#ai-agents">
+				<Button
+					is-light
+					class="max-sm:text-start"
+					>What are AI Agents?</Button
+				>
+			</a>
 		</div>
 	</div>
 </template>

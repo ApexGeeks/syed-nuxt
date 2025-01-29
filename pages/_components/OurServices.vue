@@ -1,4 +1,6 @@
-<script setup></script>
+<script setup lang="ts">
+const runtimeConfig = useRuntimeConfig();
+</script>
 <template>
 	<div class="bg-[#f4f4f4]">
 		<div class="container mb-20">
@@ -29,11 +31,16 @@
 							<h2 class="text-2xl font-semibold">Starting From US$3,000</h2>
 							<p class="leading font-semibold">setup fee</p>
 						</div>
-						<button
-							class="rounded-full bg-black px-6 py-3 font-semibold text-white transition-all duration-200 hover:px-9"
+						<a
+							:href="runtimeConfig.public.calendly"
+							target="_blank"
 						>
-							Get Started
-						</button>
+							<button
+								class="bg-Black cursor-pointer rounded-full px-6 py-3 font-semibold text-white transition-all duration-200 hover:px-9"
+							>
+								Get Started
+							</button>
+						</a>
 					</div>
 					<div class="mt-6 grid grid-cols-2 gap-2 px-5">
 						<div class="flex items-start">
@@ -86,11 +93,16 @@
 							</h2>
 							<p class="leading font-semibold text-[#8b8b8b]">setup fee</p>
 						</div>
-						<button
-							class="rounded-full border border-[#fbfbfb] bg-[#fbfbfb] px-6 py-3 font-semibold transition-all duration-200 hover:px-9"
+						<a
+							:href="runtimeConfig.public.calendly"
+							target="_blank"
 						>
-							Get Started
-						</button>
+							<button
+								class="cursor-pointer rounded-full border border-[#fbfbfb] bg-[#fbfbfb] px-6 py-3 font-semibold transition-all duration-200 hover:px-9"
+							>
+								Get Started
+							</button>
+						</a>
 					</div>
 					<div class="mt-6 grid grid-cols-2 gap-2 px-5 text-[#fbfbfb99]">
 						<div class="flex items-start">
@@ -131,7 +143,13 @@
 			<h1 class="text-2xl font-semibold">
 				Book Our AI Agent Discovery Call Today.
 			</h1>
-			<Button>Book A Call</Button>
+			<a
+				:href="runtimeConfig.public.calendly"
+				target="_blank"
+				class="cursor-pointer"
+			>
+				<Button>Book A Call</Button>
+			</a>
 		</div>
 	</div>
 </template>

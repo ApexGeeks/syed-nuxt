@@ -1,5 +1,7 @@
 <script setup lang="ts">
 import ServicesImage from './ServicesImage.vue';
+
+const runtimeConfig = useRuntimeConfig();
 </script>
 
 <template>
@@ -7,6 +9,7 @@ import ServicesImage from './ServicesImage.vue';
 		class="container mt-10 rounded-4xl border border-gray-100 bg-white pb-10"
 	>
 		<div
+			id="services"
 			class="flex flex-col items-center justify-between gap-3 py-8 sm:items-start md:flex-row md:items-center"
 		>
 			<h1 class="text-3xl font-semibold md:text-4xl">Our Services</h1>
@@ -48,7 +51,10 @@ import ServicesImage from './ServicesImage.vue';
 				</template>
 			</ServicesImage>
 		</div>
-		<div class="mt-5 rounded-[32px] border border-gray-100 bg-[#fbfbfb] p-3">
+		<div
+			id="ai-agents"
+			class="mt-5 rounded-[32px] border border-gray-100 bg-[#fbfbfb] p-3"
+		>
 			<div class="rounded-[20px] border border-gray-100 bg-white p-6">
 				<h1 class="mb-7 text-3xl font-semibold max-sm:max-w-64 max-sm:text-2xl">
 					What Are AI Agents?
@@ -75,15 +81,21 @@ import ServicesImage from './ServicesImage.vue';
 					businesses similar to yours, providing insights to help you make a
 					more informed decision.
 				</p>
-				<Button
-					class="mt-10 flex items-center gap-1 px-3 hover:px-0 max-sm:text-base"
+				<a
+					:href="runtimeConfig.public.calendly"
+					target="_blank"
+					class="cursor-pointer"
 				>
-					<Icon
-						name="bi:rocket-takeoff"
-						class="shrink-0"
-					/>
-					<span class="shrink-1"> Book 1:1 Consultation Session </span>
-				</Button>
+					<Button
+						class="mt-10 flex items-center gap-1 px-3 hover:px-0 max-sm:text-base"
+					>
+						<Icon
+							name="bi:rocket-takeoff"
+							class="shrink-0"
+						/>
+						<span class="shrink-1"> Book 1:1 Consultation Session </span>
+					</Button>
+				</a>
 			</div>
 		</div>
 	</div>

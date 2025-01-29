@@ -1,17 +1,21 @@
-<script setup></script>
+<script setup lang="ts">
+const runtimeConfig = useRuntimeConfig();
+</script>
 <template>
 	<div class="container mx-auto mt-20 mb-20">
 		<div
 			class="mb-20 flex flex-col items-start justify-between gap-14 md:flex-row md:items-center md:gap-0"
 		>
 			<h1 class="mx-auto text-2xl font-semibold md:mx-0 md:text-5xl">
-				Benifits that Drive Success
+				Benefits that Drive Success
 			</h1>
-			<button
-				class="rounded-full bg-black px-[38px] py-[20px] font-semibold text-white transition-all duration-200 hover:pr-[47px] hover:pl-[47px] max-md:mx-auto"
+			<a
+				:href="runtimeConfig.public.calendly"
+				target="_blank"
+				class="cursor-pointer"
 			>
-				Book a Call
-			</button>
+				<Button> Book a Call </Button>
+			</a>
 		</div>
 		<div class="rounded-4xl border border-gray-200 bg-white p-8">
 			<div class="grid grid-cols-1 md:grid-cols-2">
