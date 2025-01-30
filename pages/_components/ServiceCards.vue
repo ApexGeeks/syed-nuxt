@@ -31,23 +31,22 @@ const runtimeConfig = useRuntimeConfig();
 				</template>
 			</ServicesImage>
 			<ServicesImage
-				image="/images/phone-girl.jpg"
+				image="/images/chatbot-stock.jpg"
 				class="md:col-start-2 md:col-end-3"
 			>
-				<template #heading>AI Voice Agents</template>
+				<template #heading>AI Text Chatbots</template>
 				<template #paragraph>
-					Next Level AI Voice Agents For Automated Inbound and Outbound Phone
-					Calls
+					AI Text Agents for Your Website, Social Media, Emails, SMS & More.
 				</template>
 			</ServicesImage>
 			<ServicesImage
-				image="/images/phone-girl.jpg"
+				image="/images/voice-agent.jpg"
 				class="md:col-start-1 md:col-end-3"
 			>
-				<template #heading>AI Voice Agents</template>
+				<template #heading>Support And Maintainance</template>
 				<template #paragraph>
-					Next Level AI Voice Agents For Automated Inbound and Outbound Phone
-					Calls
+					Regular updates, performance boosts, and fixes to keep your agents
+					running smoothly.
 				</template>
 			</ServicesImage>
 		</div>
