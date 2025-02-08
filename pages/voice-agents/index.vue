@@ -15,7 +15,7 @@ const isFooterInView = ref(false);
 		<AgentHero />
 		<AgentAdjectives />
 	</div>
-	<div class="bg-gray-200 pb-40 md:px-24">
+	<div class="bg-gray-200 pb-40 md:px-6 lg:px-24">
 		<DesignedBusiness />
 		<AgentPricing />
 		<AgentConnect />

@@ -3,7 +3,7 @@ const runtimeConfig = useRuntimeConfig();
 </script>
 
 <template>
-	<section class="mt-64 bg-[#f4f4f4] pt-20 pb-14">
+	<section class="mt-64 pt-20 pb-14">
 		<div class="container">
 			<div
 				class="flex items-start justify-start gap-5 max-sm:flex-col md:items-center md:justify-between"
