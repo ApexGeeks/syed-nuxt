@@ -3,22 +3,22 @@ const runtimeConfig = useRuntimeConfig();
 </script>
 
 <template>
-	<div class="bg-gray-200">
+	<div class="">
 		<div
 			id="pricing"
-			class="container pt-36 pb-60 md:px-8 md:pt-48 lg:px-24"
+			class="container py-36 md:px-24 md:pt-48"
 		>
 			<h1
 				class="text-center text-2xl font-semibold max-sm:pb-20 md:mb-24 md:text-start md:text-5xl"
 			>
 				Chatbot
 				<span
-					class="border-l-4 border-teal-400 bg-gradient-to-r from-teal-200 to-teal-100"
+					class="border-Green from-GreenLight to-GreenLight/20 border-l-4 bg-gradient-to-r px-2"
 					>Pricing</span
 				>
 			</h1>
 			<div class="rounded-[32px] border border-[#eee] bg-[#fbfbfb] p-3 pb-10">
-				<div class="rounded-[20px] border border-[#f4f4f4] bg-[#ffffff] p-4">
+				<div class="rounded-[20px] border border-[#f4f4f4] bg-[#ffffff] p-7">
 					<div
 						class="mb-4 flex items-center justify-between gap-3 md:justify-normal"
 					>

@@ -13,7 +13,7 @@ const runtimeConfig = useRuntimeConfig();
 			>
 				Designed for any
 				<span
-					class="border-l-4 border-teal-400 bg-gradient-to-r from-teal-200 to-teal-100"
+					class="border-Green from-GreenLight to-GreenLight/30 border-l-4 bg-gradient-to-r px-3"
 					>Business</span
 				>
 			</h1>

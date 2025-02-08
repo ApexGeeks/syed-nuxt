@@ -25,7 +25,9 @@ const runtimeConfig = useRuntimeConfig();
 			</span>
 			that do real work.
 		</h1>
-		<div class="mt-5 gap-3 *:my-3 max-sm:*:mx-auto max-sm:*:w-full sm:flex">
+		<div
+			class="mt-5 gap-3 *:my-3 *:block max-sm:w-full max-sm:*:mx-auto max-sm:*:w-full max-sm:**:w-full sm:flex"
+		>
 			<a
 				:href="runtimeConfig.public.calendly"
 				target="_blank"

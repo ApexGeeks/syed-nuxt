@@ -10,16 +10,12 @@ const isFooterInView = ref(false);
 
 <template>
 	<!-- eslint-disable vue/no-multiple-template-root -->
-	<div class="bg-gray-100">
-		<Navbar :show-navbar="isFooterInView" />
-		<AgentHero />
-		<AgentAdjectives />
-	</div>
-	<div class="bg-gray-200 pb-40 md:px-6 lg:px-24">
-		<DesignedBusiness />
-		<AgentPricing />
-		<AgentConnect />
-		<AgentContact />
-	</div>
+	<Navbar :show-navbar="isFooterInView" />
+	<AgentHero />
+	<AgentAdjectives />
+	<DesignedBusiness />
+	<AgentPricing />
+	<AgentConnect />
+	<AgentContact />
 	<Footer @is-in-view="(value: boolean) => (isFooterInView = !value)" />
 </template>
