@@ -3,7 +3,7 @@ import Question from '@/pages/_components/Question.vue';
 </script>
 
 <template>
-	<section class="font-Poppins bg-gray-100 py-24 md:px-24">
+	<section class="font-Poppins bg-gray-100 py-24 md:px-6 lg:px-24">
 		<div class="container">
 			<h1 class="text-center text-xl font-semibold md:text-start md:text-4xl">
 				Common Questions

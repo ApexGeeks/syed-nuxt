@@ -7,7 +7,7 @@ const form = reactive({
 </script>
 
 <template>
-	<div class="bg-gray-200 pb-40 md:px-24">
+	<div class="bg-gray-200 pb-40 md:px-6 lg:px-24">
 		<section class="container rounded-4xl pb-8">
 			<div class="">
 				<div class="font-Poppins rounded-4xl bg-[#fbfbfb] p-5 px-7">

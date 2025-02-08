@@ -6,7 +6,7 @@ const runtimeConfig = useRuntimeConfig();
 	<div class="bg-gray-200">
 		<div
 			id="pricing"
-			class="container pt-36 pb-60 md:px-24 md:pt-48"
+			class="container pt-36 pb-60 md:px-8 md:pt-48 lg:px-24"
 		>
 			<h1
 				class="text-center text-2xl font-semibold max-sm:pb-20 md:mb-24 md:text-start md:text-5xl"
