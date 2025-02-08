@@ -81,7 +81,6 @@ const runtimeConfig = useRuntimeConfig();
 					<p class="font-semibold md:w-[70%]">24/7 Priority Support</p>
 				</div>
 			</div>
-
 			<div class="mt-7 rounded-[32px] border border-gray-100 bg-[#fbfbfb] p-3">
 				<div class="rounded-[20px] border border-gray-100 bg-white p-6">
 					<h1

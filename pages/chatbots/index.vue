@@ -15,7 +15,7 @@ const isFooterInView = ref(false);
 		<ChatbotHero />
 		<ChatbotAdjective />
 	</div>
-	<div class="bg-gray-100">
+	<div class="bg-gray-200">
 		<ChatbotPricing />
 		<ChatbotQuestion />
 		<ChatbotConnect />
