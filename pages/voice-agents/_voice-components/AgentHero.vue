@@ -26,17 +26,21 @@ const runtimeConfig = useRuntimeConfig();
 				AI Voice Agents
 			</span>
 		</div>
-		<div class="mt-5 gap-3 *:my-3 max-sm:*:mx-auto max-sm:*:w-full sm:flex">
+		<div
+			class="mt-5 gap-3 *:my-3 *:block max-sm:w-full max-sm:*:mx-auto max-sm:*:w-full max-sm:**:w-full sm:flex"
+		>
 			<a
 				:href="runtimeConfig.public.calendly"
 				target="_blank"
 			>
 				<Button
 					class="inline-flex items-center justify-center gap-2 shadow-lg shadow-gray-300 max-sm:w-full"
-					><img
-						src="https://cdn.prod.website-files.com/66b3f7d1ff69e1e7133402fc/66b3f7d1ff69e1e713340363_Phone.svg"
-						alt=""
-					/>Book A Call</Button
+				>
+					<Icon
+						name="mynaui:telephone"
+						size="20"
+					/>
+					Book A Call</Button
 				>
 			</a>
 			<a href="#pricing">

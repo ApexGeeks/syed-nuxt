@@ -2,7 +2,13 @@
 const runtimeConfig = useRuntimeConfig();
 </script>
 <template>
-	<div class="bg-[#f4f4f4]">
+	<div
+		id="pricing"
+		class="bg-[#f4f4f4]"
+		data-aos="fade-up"
+		data-aos-offset="400"
+		data-aos-duration="1000"
+	>
 		<div class="container mb-20">
 			<h1 class="mb-14 pt-20 text-[34px] font-semibold max-md:text-center">
 				Our
@@ -148,7 +154,13 @@ const runtimeConfig = useRuntimeConfig();
 				target="_blank"
 				class="cursor-pointer"
 			>
-				<Button>Book A Call</Button>
+				<Button class="flex items-center gap-2">
+					<Icon
+						name="mynaui:telephone"
+						size="20"
+					/>
+					Book A Call
+				</Button>
 			</a>
 		</div>
 	</div>

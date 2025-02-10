@@ -7,6 +7,9 @@ const runtimeConfig = useRuntimeConfig();
 		<div
 			id="pricing"
 			class="container py-36 md:px-24 md:pt-48"
+			data-aos="fade-up"
+			data-aos-offset="400"
+			data-aos-duration="1000"
 		>
 			<h1
 				class="text-center text-2xl font-semibold max-sm:pb-20 md:mb-24 md:text-start md:text-5xl"

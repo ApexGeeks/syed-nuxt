@@ -3,7 +3,12 @@ import Question from './Question.vue';
 </script>
 
 <template>
-	<section class="font-Poppins bg-[#f4f4f4] py-20">
+	<section
+		class="font-Poppins bg-[#f4f4f4] py-20"
+		data-aos="fade-up"
+		data-aos-offset="400"
+		data-aos-duration="1000"
+	>
 		<div class="container">
 			<h1 class="text-4xl font-semibold">Common Questions</h1>
 			<div class="mt-10 grid gap-5 md:grid-cols-2">

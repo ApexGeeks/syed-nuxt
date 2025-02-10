@@ -3,7 +3,12 @@ const runtimeConfig = useRuntimeConfig();
 </script>
 
 <template>
-	<div class="container max-sm:mt-40">
+	<div
+		class="container max-sm:mt-40"
+		data-aos="fade-up"
+		data-aos-offset="400"
+		data-aos-duration="1000"
+	>
 		<h1
 			class="mb-16 text-center text-2xl font-semibold md:mb-24 md:text-start md:text-5xl"
 		>

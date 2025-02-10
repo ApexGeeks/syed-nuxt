@@ -7,9 +7,12 @@ const runtimeConfig = useRuntimeConfig();
 		<div
 			id="pricing"
 			class="container mt-20"
+			data-aos="fade-up"
+			data-aos-offset="400"
+			data-aos-duration="1000"
 		>
 			<h1
-				class="mb-14 w-50 text-xl font-semibold max-sm:mx-auto md:mb-24 md:w-full md:text-5xl"
+				class="mb-14 text-center text-2xl font-semibold max-sm:mx-auto md:mb-24 md:w-full md:text-5xl"
 			>
 				Designed for any
 				<span
@@ -22,9 +25,7 @@ const runtimeConfig = useRuntimeConfig();
 				class="mt-5 rounded-[32px] border border-gray-100 bg-[#fbfbfb] p-3"
 			>
 				<div class="rounded-[20px] border border-gray-100 bg-white p-6">
-					<h1
-						class="mb-7 text-3xl font-semibold max-sm:max-w-64 max-sm:text-2xl"
-					>
+					<h1 class="mb-7 text-3xl font-semibold max-sm:text-2xl">
 						Inbound Phone Agent
 					</h1>
 					<p class="font-medium">
@@ -43,9 +44,7 @@ const runtimeConfig = useRuntimeConfig();
 				class="mt-5 rounded-[32px] border border-gray-100 bg-[#fbfbfb] p-3"
 			>
 				<div class="rounded-[20px] border border-gray-100 bg-white p-6">
-					<h1
-						class="mb-7 text-3xl font-semibold max-sm:max-w-64 max-sm:text-2xl"
-					>
+					<h1 class="mb-7 text-3xl font-semibold max-sm:text-2xl">
 						Outbound Phone Agent
 					</h1>
 					<p class="font-medium">
@@ -69,14 +68,13 @@ const runtimeConfig = useRuntimeConfig();
 					:href="runtimeConfig.public.calendly"
 					class="cursor-pointer"
 				>
-					<div
-						class="bg-Black flex items-center gap-2 rounded-full px-20 py-4 text-white"
-					>
-						<img
-							src="https://cdn.prod.website-files.com/66b3f7d1ff69e1e7133402fc/66b3f7d1ff69e1e713340363_Phone.svg"
-							alt=""
-						/>Book A Call
-					</div>
+					<Button class="flex items-center gap-3">
+						<Icon
+							name="mynaui:telephone"
+							size="20"
+						/>
+						Book A Call
+					</Button>
 				</a>
 			</div>
 		</div>

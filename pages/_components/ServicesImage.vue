@@ -1,10 +1,11 @@
 <script setup lang="ts">
-defineProps<{ image: string }>();
+defineProps<{ image: string; url: string }>();
 </script>
 
 <template>
 	<div
 		class="group font-Poppins relative cursor-pointer overflow-hidden rounded-2xl"
+		@click="navigateTo(url)"
 	>
 		<div class="absolute z-[5] h-full w-full">
 			<img
@@ -23,7 +24,8 @@ defineProps<{ image: string }>();
 			<p class="my-3 max-w-54 text-lg font-semibold text-[#d4d4d4]">
 				<slot name="paragraph" />
 			</p>
-			<button
+			<NuxtLink
+				:to="url"
 				class="group/button flex items-center text-lg font-semibold text-white transition"
 			>
 				<span class="pr-3 transition-all group-hover/button:pr-5">
@@ -33,7 +35,7 @@ defineProps<{ image: string }>();
 					name="ep:top-right"
 					size="14"
 				/>
-			</button>
+			</NuxtLink>
 		</div>
 	</div>
 </template>

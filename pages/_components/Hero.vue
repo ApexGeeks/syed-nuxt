@@ -1,10 +1,19 @@
 <script setup lang="ts">
 const runtimeConfig = useRuntimeConfig();
+
+const isMounted = ref(false);
+
+onMounted(() => {
+	setTimeout(() => {
+		isMounted.value = true;
+	}, 500);
+});
 </script>
 
 <template>
 	<div
-		class="font-Poppins text-Black container flex flex-col items-center py-20"
+		class="font-Poppins text-Black container flex flex-col items-center py-20 transition duration-300"
+		:class="isMounted ? 'translate-y-0 opacity-100' : 'translate-y-5 opacity-0'"
 	>
 		<img
 			src="/images/heading.png"
@@ -32,7 +41,13 @@ const runtimeConfig = useRuntimeConfig();
 				:href="runtimeConfig.public.calendly"
 				target="_blank"
 			>
-				<Button>Book A Call</Button>
+				<Button class="flex items-center gap-2">
+					<Icon
+						name="mynaui:telephone"
+						size="20"
+					/>
+					Book A Call
+				</Button>
 			</a>
 			<a href="#services">
 				<Button

@@ -7,6 +7,9 @@ const runtimeConfig = useRuntimeConfig();
 <template>
 	<div
 		class="container mt-10 rounded-4xl border border-gray-100 bg-white pb-10"
+		data-aos="fade-up"
+		data-aos-offset="400"
+		data-aos-duration="1000"
 	>
 		<div
 			id="services"
@@ -22,6 +25,7 @@ const runtimeConfig = useRuntimeConfig();
 		<div class="grid gap-5 *:min-h-110">
 			<ServicesImage
 				image="/images/phone-girl.jpg"
+				url="/voice-agents"
 				class="md:col-start-1 md:-col-end-1"
 			>
 				<template #heading>AI Voice Agents</template>
@@ -32,6 +36,7 @@ const runtimeConfig = useRuntimeConfig();
 			</ServicesImage>
 			<ServicesImage
 				image="/images/chatbot-stock.jpg"
+				url="/chatbots"
 				class="md:col-start-2 md:col-end-3"
 			>
 				<template #heading>AI Text Chatbots</template>
@@ -41,6 +46,7 @@ const runtimeConfig = useRuntimeConfig();
 			</ServicesImage>
 			<ServicesImage
 				image="/images/voice-agent.jpg"
+				url="/support"
 				class="md:col-start-1 md:col-end-3"
 			>
 				<template #heading>Support And Maintainance</template>

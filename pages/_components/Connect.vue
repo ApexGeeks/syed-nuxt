@@ -3,7 +3,13 @@ const runtimeConfig = useRuntimeConfig();
 </script>
 
 <template>
-	<section class="bg-[#f4f4f4] py-20">
+	<section
+		id="contact-us"
+		class="bg-[#f4f4f4] py-20"
+		data-aos="fade-up"
+		data-aos-offset="400"
+		data-aos-duration="1000"
+	>
 		<div class="container">
 			<div class="flex items-center justify-between gap-5 max-sm:flex-col">
 				<h1 class="text-4xl font-semibold">

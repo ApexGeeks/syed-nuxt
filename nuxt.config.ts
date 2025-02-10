@@ -46,5 +46,6 @@ export default defineNuxtConfig({
 	},
 	vite: {
 		plugins: [tailwindcss()]
-	}
+	},
+	plugins: [{ src: '~/plugins/aos', mode: 'client' }]
 });

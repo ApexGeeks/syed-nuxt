@@ -2,7 +2,12 @@
 const runtimeConfig = useRuntimeConfig();
 </script>
 <template>
-	<div class="container mx-auto mt-20 mb-20">
+	<div
+		class="container mx-auto mt-20 mb-20"
+		data-aos="fade-up"
+		data-aos-offset="400"
+		data-aos-duration="1000"
+	>
 		<div
 			class="mb-20 flex flex-col items-start justify-between gap-14 md:flex-row md:items-center md:gap-0"
 		>
@@ -14,7 +19,13 @@ const runtimeConfig = useRuntimeConfig();
 				target="_blank"
 				class="cursor-pointer"
 			>
-				<Button> Book a Call </Button>
+				<Button class="flex items-center gap-2">
+					<Icon
+						name="mynaui:telephone"
+						size="20"
+					/>
+					Book A Call
+				</Button>
 			</a>
 		</div>
 		<div class="rounded-4xl border border-gray-200 bg-white p-8">

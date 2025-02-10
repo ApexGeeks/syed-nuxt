@@ -7,7 +7,12 @@ const form = reactive({
 </script>
 
 <template>
-	<div class="pb-40 md:px-24">
+	<div
+		class="pb-40 md:px-24"
+		data-aos="fade-up"
+		data-aos-offset="400"
+		data-aos-duration="1000"
+	>
 		<section class="container rounded-4xl pb-8">
 			<div class="">
 				<div class="font-Poppins rounded-4xl bg-[#fbfbfb] p-5 px-10">

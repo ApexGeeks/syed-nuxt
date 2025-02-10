@@ -3,7 +3,12 @@ const runtimeConfig = useRuntimeConfig();
 </script>
 
 <template>
-	<section class="bg-gray-200 pt-20 pb-10 md:px-6 lg:px-24">
+	<section
+		class="bg-gray-200 pt-20 pb-10 md:px-6 lg:px-24"
+		data-aos="fade-up"
+		data-aos-offset="400"
+		data-aos-duration="1000"
+	>
 		<div class="container">
 			<div
 				class="mt-16 flex items-start justify-start gap-5 max-sm:flex-col md:items-center md:justify-between"

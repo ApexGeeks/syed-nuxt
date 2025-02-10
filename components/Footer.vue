@@ -37,11 +37,13 @@ watch(
 					</div>
 					<div>
 						<ul
-							class="space-y-3 text-lg font-semibold text-white *:cursor-pointer"
+							class="space-y-3 text-xl text-white *:cursor-pointer *:transition *:duration-300 *:hover:opacity-80"
 						>
-							<li>Services</li>
-							<li>Pricing</li>
-							<li>Contact Us</li>
+							<li>
+								<a href="#services"> Services </a>
+							</li>
+							<li><a href="#pricing">Pricing</a></li>
+							<li><a href="#contact-us">Contact Us</a></li>
 							<li>1:1 Consultation</li>
 							<li class="text-red-500">Youtube Channel</li>
 						</ul>
